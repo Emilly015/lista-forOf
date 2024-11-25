@@ -8,10 +8,27 @@
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
 
-    //PROCESSAMENTO FOR OF 
-    let listaFem = [];
-    let listaMasc = [];
-    //TERMINAR
+    //PROCESSAMENTO
+    let M = [];
+    let F = [];
+    
+    for(let nome of listaDeNomes){
+                alert(nome)  
+                let pergunta = prompt(`É masculino (M) ou feminino (F)?`);
+                if(pergunta == `m` || pergunta ==`masculino` || pergunta == `M` || pergunta == `Masculino`){
+                    M.push(nome);
+                }
+                else if (pergunta == `f` || pergunta == `feminino` || pergunta == `F` || pergunta == `Feminino`){
+                    F.push(nome);
+                }
+                else{
+                    alert(`Escreveu errado.`);
+                }
+    
+            }
+
     //SAÍDA
+    document.write(`Nomes masculinos: ${M.join(" , ")} <br>`);
+    document.write(`Nomes femininos: ${F.join(`, `)} `); 
 
 </script>
