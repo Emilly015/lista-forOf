@@ -12,13 +12,13 @@
     //PROCESSAMENTO
     for (numero of listaDeItens){
         if(numero % 2 == 0){
-                paresNumeros.push(numero)
+                paresNumeros.push(numero);
         }
     }
 
     //SAÍDA
-    document.write(`Números pares: ${paresNumeros} <br>`) 
-    document.write(`Quantidade de números pares: ${paresNumeros.length} <br>`)
-    document.write(`Quantidade de elementos da lista: ${listaDeItens.length}`)
+    document.write(`Números pares: ${paresNumeros.join(", ")} <br>`);
+    document.write(`Quantidade de números pares: ${paresNumeros.length} <br>`);
+    document.write(`Quantidade de elementos da lista: ${listaDeItens.length}`);  //terminado
 
 </script>

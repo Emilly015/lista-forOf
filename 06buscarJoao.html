@@ -8,13 +8,14 @@
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
     let buscarJoao= []
+    
     //PROCESSAMENTO
     for(nome of listaDeNomes){
         if(nome.includes(`João`) || nome.includes(`Joao`)){
-            buscarJoao.push(nome)
+            buscarJoao.push(nome);
         }
     }
     
     //SAÍDA
-    document.write(`Nomes que contém "João": <br> <li> ${buscarJoao.join ("<li>")}`)
+    document.write(`Nomes que contém "João": <br> <li> ${buscarJoao.join ("<li>")}`);  //terminado 
 </script>
