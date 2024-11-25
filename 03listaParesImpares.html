@@ -23,7 +23,6 @@
 
     //SAÍDA
 
-    document.write(`Números ímpares: <li> ${listaImpares.sort().join(` - `)} <li> ${listaImpares.reverse().join(` - `)} <br>`); 
-    document.write(`Números pares: <li> ${listaPares.sort(function (a, b) {a-b}).join(` - `)} <li> ${listaPares.reverse().join(` - `)}`); //terminado
-
+    document.write(`Números ímpares: <li> ${listaImpares.sort((a,b)=> a-b).join(` - `)} <li> ${listaImpares.sort((a,b)=> b-a).join(` - `)} <br>`); 
+    document.write(`Números pares:  <li> ${listaPares.sort((a,b)=> a-b).join(` - `)} <li> ${listaPares.sort((a,b)=> b-a).join(` - `)} <br>`);
 </script>
