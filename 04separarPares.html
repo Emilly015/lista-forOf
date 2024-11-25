@@ -7,18 +7,18 @@
 
     //ENTRADA
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
-    let paresNumeros =[]
+    let numerosPares =[]
 
     //PROCESSAMENTO
     for (numero of listaDeItens){
         if(numero % 2 == 0){
-                paresNumeros.push(numero);
+                numerosPares.push(numero);
         }
     }
 
     //SAÍDA
-    document.write(`Números pares: ${paresNumeros.join(", ")} <br>`);
-    document.write(`Quantidade de números pares: ${paresNumeros.length} <br>`);
+    document.write(`Números pares: ${numerosPares.join(", ")} <br>`);
+    document.write(`Quantidade de números pares: ${numerosPares.length} <br>`);
     document.write(`Quantidade de elementos da lista: ${listaDeItens.length}`);  //terminado
 
 </script>
